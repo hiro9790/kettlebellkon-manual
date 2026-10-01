@@ -40,7 +40,8 @@ written yet — do not add technical or safety claims until they are approved.
 
 ## Development
 
-Plain HTML and CSS only — no frameworks, package manager, build step, or CDN.
+Plain HTML and CSS only — no frameworks, package manager, or build step. The
+only external script is the Google tag (gtag.js) for GA4 (see Analytics).
 Open `index.html` directly in a browser to preview.
 
 - Pages use **relative links** so they work both on the custom domain and when
@@ -54,6 +55,8 @@ Open `index.html` directly in a browser to preview.
 
 ## Analytics
 
-GA4 is **not** installed yet. It will be added later once a Measurement ID
-exists. The QR URL already carries `utm_source=package&utm_medium=qr` so that
-package scans can be attributed once analytics is in place.
+GA4 is installed with Measurement ID **`G-WEXM54D0QD`**. Every HTML page
+includes the standard Google tag (gtag.js) snippet once, inside `<head>`.
+
+Package QR visits are attributed via `utm_source=package&utm_medium=qr` on the
+QR target URL (see URLs above).
