@@ -6,11 +6,27 @@ This is **not** a marketing site. It is a minimal electronic instruction manual,
 designed to be read on a phone after scanning the QR code printed on product
 packaging. Japanese first, with short English labels.
 
-## Status
+## Rucking Plate Carrier manual
 
-All manual content is **provisional (準備中)**. Pages are placeholders and are
-clearly marked as such. Final instructions and safety guidance have not been
-written yet — do not add technical or safety claims until they are approved.
+`manual/rucking/index.html` is the **single canonical manual page** and the only
+content source. One common manual covers all three models:
+
+| Model     | Package contents             |
+| --------- | ---------------------------- |
+| KB-RUCR05 | 5kg plate × 1 + carrier × 1  |
+| KB-RUCR10 | 5kg plate × 2 + carrier × 1  |
+| KB-RUCR15 | 5kg plate × 3 + carrier × 1  |
+
+Sections (anchors): `#intro`, `#safety`, `#contents`, `#setup`, `#usage`,
+`#care`, `#storage`, `#examples`.
+
+`setup.html`, `usage.html` and `safety.html` are minimal redirect pages to
+`index.html#setup`, `#usage` and `#safety`, kept so old links keep working.
+Do not add manual content to them.
+
+Photo-dependent sections currently show styled placeholders (`.photo` with a
+"PHOTO 撮影予定" label). Replace each with a real image when photos are ready.
+Do not add technical or safety claims that have not been approved.
 
 ## URLs
 
@@ -29,10 +45,10 @@ written yet — do not add technical or safety claims until they are approved.
 │   └── style.css              # Shared responsive styles
 ├── manual/
 │   └── rucking/
-│       ├── index.html         # Rucking Plate Carrier user guide (contents)
-│       ├── setup.html         # プレートのセット・装着 / Setup & Fit
-│       ├── usage.html         # 使い方 / How to Use
-│       └── safety.html        # 安全上の注意 / Safety
+│       ├── index.html         # Canonical common manual (KB-RUCR05/10/15)
+│       ├── setup.html         # Redirect → index.html#setup
+│       ├── usage.html         # Redirect → index.html#usage
+│       └── safety.html        # Redirect → index.html#safety
 ├── CNAME                      # Custom domain: kettlebellkon.com
 ├── .nojekyll                  # Disable Jekyll processing on GitHub Pages
 └── README.md
