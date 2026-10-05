@@ -456,6 +456,12 @@ figure {
   font-size: 0.75rem;
 }
 
+@media (max-width: 30em) {
+  .photo-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Cards */
 
 .card-list {
