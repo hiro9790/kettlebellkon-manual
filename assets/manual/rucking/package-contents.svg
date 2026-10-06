@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="title desc">
+  <title id="title">梱包内容（型番別）</title>
+  <desc id="desc">KB-RUCR05: キャリア1点と5kgプレート1枚。KB-RUCR10: キャリア1点と5kgプレート2枚。KB-RUCR15: キャリア1点と5kgプレート3枚。仮画像。</desc>
+  <style>
+    text { font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif; fill: #111; }
+    .model { font-size: 34px; font-weight: 700; letter-spacing: 1px; }
+    .sub { font-size: 19px; fill: #555; }
+    .kg { font-size: 15px; font-weight: 700; fill: #fff; letter-spacing: 0.5px; }
+    .logo { font-size: 10px; font-weight: 700; fill: #8a8a8a; letter-spacing: 1.5px; }
+  </style>
+  <defs>
+    <!-- 5kg rucking plate, 70 x 105 -->
+    <g id="plate">
+      <rect width="70" height="105" rx="12" fill="#141414"/>
+      <rect x="4" y="4" width="62" height="97" rx="9" fill="none" stroke="#2e2e2e" stroke-width="2"/>
+      <rect x="17" y="13" width="36" height="12" rx="6" fill="#fafafa"/>
+      <rect x="17" y="80" width="36" height="12" rx="6" fill="#fafafa"/>
+      <text class="kg" x="35" y="58" text-anchor="middle">5 KG</text>
+    </g>
+    <!-- Carrier (closed), 150 x 200 -->
+    <g id="carrier">
+      <path d="M38 40 C38 0 66 0 66 40" fill="none" stroke="#141414" stroke-width="11" stroke-linecap="round"/>
+      <path d="M84 40 C84 0 112 0 112 40" fill="none" stroke="#141414" stroke-width="11" stroke-linecap="round"/>
+      <rect y="30" width="150" height="170" rx="18" fill="#141414"/>
+      <rect x="8" y="38" width="134" height="154" rx="12" fill="none" stroke="#3a3a3a" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <rect y="100" width="150" height="14" fill="#262626"/>
+      <rect y="150" width="150" height="14" fill="#262626"/>
+      <rect x="20" y="97" width="16" height="20" rx="3" fill="#3d3d3d"/>
+      <rect x="114" y="147" width="16" height="20" rx="3" fill="#3d3d3d"/>
+      <text class="logo" x="75" y="76" text-anchor="middle">KETTLEBELLKON</text>
+    </g>
+  </defs>
+
+  <rect width="960" height="520" fill="#fafafa"/>
+  <line x1="320" y1="30" x2="320" y2="495" stroke="#dadada" stroke-width="2"/>
+  <line x1="640" y1="30" x2="640" y2="495" stroke="#dadada" stroke-width="2"/>
+
+  <!-- KB-RUCR05 -->
+  <text class="model" x="160" y="72" text-anchor="middle">KB-RUCR05</text>
+  <text class="sub" x="160" y="106" text-anchor="middle">5kgプレート×1 ＋ キャリア×1</text>
+  <use href="#carrier" x="85" y="140"/>
+  <use href="#plate" x="125" y="375"/>
+
+  <!-- KB-RUCR10 -->
+  <text class="model" x="480" y="72" text-anchor="middle">KB-RUCR10</text>
+  <text class="sub" x="480" y="106" text-anchor="middle">5kgプレート×2 ＋ キャリア×1</text>
+  <use href="#carrier" x="405" y="140"/>
+  <use href="#plate" x="403" y="375"/>
+  <use href="#plate" x="487" y="375"/>
+
+  <!-- KB-RUCR15 -->
+  <text class="model" x="800" y="72" text-anchor="middle">KB-RUCR15</text>
+  <text class="sub" x="800" y="106" text-anchor="middle">5kgプレート×3 ＋ キャリア×1</text>
+  <use href="#carrier" x="725" y="140"/>
+  <use href="#plate" x="681" y="375"/>
+  <use href="#plate" x="765" y="375"/>
+  <use href="#plate" x="849" y="375"/>
+</svg>

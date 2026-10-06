@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 940" width="960" height="940" role="img" aria-labelledby="title desc">
+  <title id="title">ラッキングプレートの活用例</title>
+  <desc id="desc">プレートの持ち手穴を持って行うスクワット、ランジ、ショルダープレス、フロントレイズ。それぞれ開始姿勢と動作後の姿勢を示す。仮画像。</desc>
+  <style>
+    text { font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif; fill: #111; }
+    .title { font-size: 30px; font-weight: 700; }
+    .no { font-size: 18px; font-weight: 700; fill: #fff; }
+    .kg { font-size: 10px; font-weight: 700; fill: #fff; }
+    .limb { fill: none; stroke: #a8a8a8; stroke-width: 18; stroke-linecap: round; stroke-linejoin: round; }
+    .far { stroke: #c8c8c8; }
+    .torso { stroke-width: 28; }
+    .torso-front { stroke-width: 34; }
+    .foot { stroke-width: 12; }
+    .head, .hand { fill: #a8a8a8; }
+    .ground { stroke: #e2e2e2; stroke-width: 3; }
+    .seq { fill: none; stroke: #888; stroke-width: 5; stroke-linecap: round; }
+    .move { fill: none; stroke: #d4202a; stroke-width: 4; stroke-linecap: round; }
+  </style>
+  <defs>
+    <marker id="ah-gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="3.5" markerHeight="3.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#888"/>
+    </marker>
+    <marker id="ah-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#d4202a"/>
+    </marker>
+    <!-- Plate held upright, 36 x 54 -->
+    <g id="plate-v">
+      <rect width="36" height="54" rx="7" fill="#141414"/>
+      <rect x="9" y="6" width="18" height="7" rx="3.5" fill="#fff"/>
+      <rect x="9" y="41" width="18" height="7" rx="3.5" fill="#fff"/>
+      <text class="kg" x="18" y="31" text-anchor="middle">5KG</text>
+    </g>
+    <!-- Plate held sideways, 54 x 36 -->
+    <g id="plate-h">
+      <rect width="54" height="36" rx="7" fill="#141414"/>
+      <rect x="6" y="9" width="7" height="18" rx="3.5" fill="#fff"/>
+      <rect x="41" y="9" width="7" height="18" rx="3.5" fill="#fff"/>
+      <text class="kg" x="27" y="22" text-anchor="middle">5KG</text>
+    </g>
+    <!-- Standing body, side view facing right, centred on x=120 (no arms) -->
+    <g id="body-side">
+      <polyline class="limb far" points="118,235 120,315 118,388"/>
+      <line class="limb far foot" x1="118" y1="392" x2="142" y2="392"/>
+      <polyline class="limb" points="122,235 124,315 122,388"/>
+      <line class="limb foot" x1="122" y1="392" x2="146" y2="392"/>
+      <line class="limb torso" x1="120" y1="130" x2="120" y2="232"/>
+      <circle class="head" cx="122" cy="96" r="20"/>
+    </g>
+    <!-- Standing body, front view, centred on x=120 (no arms) -->
+    <g id="body-front">
+      <polyline class="limb" points="108,235 104,315 102,388"/>
+      <line class="limb foot" x1="102" y1="392" x2="88" y2="392"/>
+      <polyline class="limb" points="132,235 136,315 138,388"/>
+      <line class="limb foot" x1="138" y1="392" x2="152" y2="392"/>
+      <line class="limb torso-front" x1="120" y1="130" x2="120" y2="232"/>
+      <circle class="head" cx="120" cy="96" r="20"/>
+    </g>
+    <!-- Standing with plate held at chest, side view, x=120 -->
+    <g id="stand-chest">
+      <use href="#body-side"/>
+      <use href="#plate-v" x="140" y="135"/>
+      <polyline class="limb" points="122,138 128,198 158,180"/>
+      <circle class="hand" cx="158" cy="180" r="9"/>
+    </g>
+  </defs>
+
+  <rect width="960" height="940" fill="#fff"/>
+  <line x1="480" y1="20" x2="480" y2="920" stroke="#ddd" stroke-width="2"/>
+  <line x1="20" y1="470" x2="940" y2="470" stroke="#ddd" stroke-width="2"/>
+
+  <!-- 1. Squat -->
+  <g>
+    <circle cx="44" cy="38" r="16" fill="#111"/>
+    <text class="no" x="44" y="45" text-anchor="middle">1</text>
+    <text class="title" x="72" y="49">スクワット</text>
+    <g transform="translate(0 40)">
+      <line class="ground" x1="30" y1="399" x2="450" y2="399"/>
+      <use href="#stand-chest"/>
+      <line class="seq" x1="200" y1="250" x2="240" y2="250" marker-end="url(#ah-gray)"/>
+      <!-- after: squat -->
+      <polyline class="limb far" points="314,290 368,298 356,388"/>
+      <line class="limb far foot" x1="356" y1="392" x2="380" y2="392"/>
+      <polyline class="limb" points="318,290 372,298 360,388"/>
+      <line class="limb foot" x1="360" y1="392" x2="384" y2="392"/>
+      <line class="limb torso" x1="318" y1="288" x2="350" y2="190"/>
+      <circle class="head" cx="360" cy="158" r="20"/>
+      <use href="#plate-v" x="374" y="196"/>
+      <polyline class="limb" points="350,198 358,258 392,240"/>
+      <circle class="hand" cx="392" cy="240" r="9"/>
+      <line class="move" x1="440" y1="170" x2="440" y2="260" marker-end="url(#ah-red)"/>
+    </g>
+  </g>
+
+  <!-- 2. Lunge -->
+  <g transform="translate(480 0)">
+    <circle cx="44" cy="38" r="16" fill="#111"/>
+    <text class="no" x="44" y="45" text-anchor="middle">2</text>
+    <text class="title" x="72" y="49">ランジ</text>
+    <g transform="translate(0 40)">
+      <line class="ground" x1="30" y1="399" x2="450" y2="399"/>
+      <use href="#stand-chest" x="-10"/>
+      <line class="seq" x1="188" y1="250" x2="228" y2="250" marker-end="url(#ah-gray)"/>
+      <!-- after: lunge -->
+      <polyline class="limb far" points="330,272 300,370 258,382"/>
+      <line class="limb far foot" x1="258" y1="384" x2="248" y2="392"/>
+      <polyline class="limb" points="330,272 384,300 384,388"/>
+      <line class="limb foot" x1="384" y1="392" x2="408" y2="392"/>
+      <line class="limb torso" x1="330" y1="270" x2="330" y2="165"/>
+      <circle class="head" cx="332" cy="133" r="20"/>
+      <use href="#plate-v" x="348" y="174"/>
+      <polyline class="limb" points="332,175 338,235 366,218"/>
+      <circle class="hand" cx="366" cy="218" r="9"/>
+      <line class="move" x1="440" y1="180" x2="440" y2="270" marker-end="url(#ah-red)"/>
+    </g>
+  </g>
+
+  <!-- 3. Shoulder press -->
+  <g transform="translate(0 470)">
+    <circle cx="44" cy="38" r="16" fill="#111"/>
+    <text class="no" x="44" y="45" text-anchor="middle">3</text>
+    <text class="title" x="72" y="49">ショルダープレス</text>
+    <g transform="translate(0 40)">
+      <line class="ground" x1="30" y1="399" x2="450" y2="399"/>
+      <!-- before: plate at shoulder height -->
+      <use href="#body-front"/>
+      <polyline class="limb" points="102,136 80,176 103,148"/>
+      <polyline class="limb" points="138,136 160,176 137,148"/>
+      <use href="#plate-h" x="93" y="130"/>
+      <circle class="hand" cx="103" cy="148" r="9"/>
+      <circle class="hand" cx="137" cy="148" r="9"/>
+      <line class="seq" x1="205" y1="250" x2="245" y2="250" marker-end="url(#ah-gray)"/>
+      <!-- after: plate overhead -->
+      <use href="#body-front" x="220"/>
+      <polyline class="limb" points="322,136 312,92 323,50"/>
+      <polyline class="limb" points="358,136 368,92 357,50"/>
+      <use href="#plate-h" x="313" y="32"/>
+      <circle class="hand" cx="323" cy="50" r="9"/>
+      <circle class="hand" cx="357" cy="50" r="9"/>
+      <line class="move" x1="430" y1="160" x2="430" y2="70" marker-end="url(#ah-red)"/>
+    </g>
+  </g>
+
+  <!-- 4. Front raise -->
+  <g transform="translate(480 470)">
+    <circle cx="44" cy="38" r="16" fill="#111"/>
+    <text class="no" x="44" y="45" text-anchor="middle">4</text>
+    <text class="title" x="72" y="49">フロントレイズ</text>
+    <g transform="translate(0 40)">
+      <line class="ground" x1="30" y1="399" x2="450" y2="399"/>
+      <!-- before: arms down -->
+      <use href="#body-side"/>
+      <use href="#plate-v" x="124" y="226"/>
+      <line class="limb" x1="122" y1="138" x2="142" y2="236"/>
+      <circle class="hand" cx="142" cy="236" r="9"/>
+      <line class="seq" x1="185" y1="250" x2="225" y2="250" marker-end="url(#ah-gray)"/>
+      <!-- after: arms raised to shoulder height -->
+      <use href="#body-side" x="200"/>
+      <use href="#plate-v" x="392" y="128"/>
+      <line class="limb" x1="322" y1="138" x2="410" y2="138"/>
+      <circle class="hand" cx="410" cy="138" r="9"/>
+      <path class="move" d="M387 251 A130 130 0 0 0 448 172" stroke-dasharray="8 6" marker-end="url(#ah-red)"/>
+    </g>
+  </g>
+</svg>

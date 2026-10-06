@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640" role="img" aria-labelledby="title desc">
+  <title id="title">正面から見た装着姿</title>
+  <desc id="desc">キャリアを背負った上半身の正面図。2本のストラップを調整して体にフィットさせる。仮画像。</desc>
+  <style>
+    text { font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif; }
+    .label { font-size: 26px; font-weight: 700; fill: #fff; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#d4202a"/>
+    </marker>
+  </defs>
+
+  <rect width="480" height="640" fill="#fafafa"/>
+
+  <!-- Carrier on the back (top edge visible behind shoulders) -->
+  <rect x="165" y="166" width="150" height="200" rx="16" fill="#141414"/>
+
+  <!-- Torso -->
+  <path d="M214 170 L214 194 C170 198 146 206 140 230 L150 470 L158 640 L322 640 L330 470 L340 230 C334 206 310 198 266 194 L266 170 Z" fill="#d6d6d6" stroke="#c2c2c2" stroke-width="2"/>
+  <!-- Head (faceless) -->
+  <circle cx="240" cy="126" r="48" fill="#d6d6d6" stroke="#c2c2c2" stroke-width="2"/>
+
+  <!-- Strap continuation toward the back, under the arms -->
+  <path d="M196 368 C176 390 160 404 146 414" fill="none" stroke="#141414" stroke-width="16" stroke-linecap="round"/>
+  <path d="M284 368 C304 390 320 404 334 414" fill="none" stroke="#141414" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Arms -->
+  <path d="M130 238 L118 330 L114 450" fill="none" stroke="#c2c2c2" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M130 238 L118 330 L114 450" fill="none" stroke="#d6d6d6" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M350 238 L362 330 L366 450" fill="none" stroke="#c2c2c2" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M350 238 L362 330 L366 450" fill="none" stroke="#d6d6d6" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Two shoulder straps (body-fit straps) -->
+  <path d="M206 190 C196 230 192 300 194 360" fill="none" stroke="#141414" stroke-width="24" stroke-linecap="round"/>
+  <path d="M274 190 C284 230 288 300 286 360" fill="none" stroke="#141414" stroke-width="24" stroke-linecap="round"/>
+  <!-- Buckles + adjustable tails -->
+  <rect x="180" y="354" width="28" height="16" rx="3" fill="#5a5a5a"/>
+  <rect x="272" y="354" width="28" height="16" rx="3" fill="#5a5a5a"/>
+  <path d="M194 372 L196 414" stroke="#141414" stroke-width="13" stroke-linecap="round"/>
+  <path d="M286 372 L284 414" stroke="#141414" stroke-width="13" stroke-linecap="round"/>
+
+  <!-- Emphasis -->
+  <ellipse cx="194" cy="384" rx="30" ry="48" fill="none" stroke="#d4202a" stroke-width="3" stroke-dasharray="7 5"/>
+  <ellipse cx="286" cy="384" rx="30" ry="48" fill="none" stroke="#d4202a" stroke-width="3" stroke-dasharray="7 5"/>
+  <line x1="240" y1="352" x2="240" y2="418" stroke="#d4202a" stroke-width="4" marker-start="url(#ar)" marker-end="url(#ar)"/>
+
+  <!-- Callout -->
+  <g stroke="#d4202a" stroke-width="3">
+    <line x1="194" y1="432" x2="180" y2="540"/>
+    <line x1="286" y1="432" x2="300" y2="540"/>
+  </g>
+  <rect x="56" y="540" width="368" height="56" rx="28" fill="#d4202a"/>
+  <text class="label" x="240" y="577" text-anchor="middle">体にフィットするよう調整</text>
+</svg>

@@ -24,8 +24,10 @@ Sections (anchors): `#intro`, `#safety`, `#contents`, `#setup`, `#usage`,
 `index.html#setup`, `#usage` and `#safety`, kept so old links keep working.
 Do not add manual content to them.
 
-Photo-dependent sections currently show styled placeholders (`.photo` with a
-"PHOTO 撮影予定" label). Replace each with a real image when photos are ready.
+Visuals are currently **temporary SVG reference illustrations** in
+`assets/manual/rucking/` (package contents, carrier inside, plate setup, fit
+front/side, exercises). They will be replaced with final factory photography;
+keep the same `<figure class="manual-visual">` markup and swap the `src`.
 Do not add technical or safety claims that have not been approved.
 
 ## URLs
@@ -42,7 +44,8 @@ Do not add technical or safety claims that have not been approved.
 ├── index.html                 # Manuals landing page (product list)
 ├── 404.html                   # Not-found page (root-absolute links; see note)
 ├── assets/
-│   └── style.css              # Shared responsive styles
+│   ├── style.css              # Shared responsive styles
+│   └── manual/rucking/        # Temporary SVG visuals (to be replaced by photos)
 ├── manual/
 │   └── rucking/
 │       ├── index.html         # Canonical common manual (KB-RUCR05/10/15)

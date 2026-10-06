@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-labelledby="title desc">
+  <title id="title">キャリア内側の各部名称</title>
+  <desc id="desc">開いた状態のキャリア。奥側の大きな収納部がポケット1、手前下側の収納部がポケット2、中央上部から下がっているのがストラップ。仮画像。</desc>
+  <style>
+    text { font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif; }
+    .label { font-size: 26px; font-weight: 700; fill: #fff; }
+  </style>
+  <defs>
+    <pattern id="hook" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#4a4a4a"/>
+      <path d="M0 6 L6 0" stroke="#666" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="620" fill="#fafafa"/>
+
+  <!-- Shoulder straps -->
+  <path d="M340 116 C340 30 400 30 400 116" fill="none" stroke="#141414" stroke-width="18" stroke-linecap="round"/>
+  <path d="M500 116 C500 30 560 30 560 116" fill="none" stroke="#141414" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Carrier body -->
+  <rect x="280" y="110" width="340" height="480" rx="26" fill="#141414"/>
+  <!-- Opened zipper -->
+  <rect x="293" y="128" width="314" height="449" rx="20" fill="none" stroke="#5a5a5a" stroke-width="3" stroke-dasharray="2 4"/>
+  <rect x="598" y="150" width="12" height="30" rx="3" fill="#6a6a6a"/>
+
+  <!-- Pocket 1 (rear compartment) -->
+  <rect x="305" y="140" width="290" height="425" rx="14" fill="#2c2c2c"/>
+
+  <!-- Strap -->
+  <rect x="420" y="140" width="60" height="240" rx="6" fill="#0d0d0d" stroke="#555" stroke-width="1.5"/>
+  <rect x="426" y="146" width="48" height="28" fill="none" stroke="#444" stroke-width="1.5"/>
+  <path d="M426 146 L474 174 M474 146 L426 174" stroke="#444" stroke-width="1.5"/>
+  <rect x="424" y="324" width="52" height="52" rx="4" fill="url(#hook)"/>
+
+  <!-- Pocket 2 (front sleeve) -->
+  <path d="M305 345 H595 V551 Q595 565 581 565 H319 Q305 565 305 551 Z" fill="#1b1b1b"/>
+  <line x1="305" y1="345" x2="595" y2="345" stroke="#6a6a6a" stroke-width="4"/>
+  <line x1="315" y1="356" x2="585" y2="356" stroke="#3c3c3c" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- Callouts -->
+  <g stroke="#d4202a" stroke-width="3" fill="none">
+    <line x1="350" y1="240" x2="210" y2="240"/>
+    <line x1="350" y1="460" x2="210" y2="460"/>
+    <line x1="470" y1="250" x2="690" y2="250"/>
+  </g>
+  <g fill="#d4202a" stroke="#fff" stroke-width="3">
+    <circle cx="350" cy="240" r="8"/>
+    <circle cx="350" cy="460" r="8"/>
+    <circle cx="470" cy="250" r="8"/>
+  </g>
+
+  <rect x="40" y="217" width="170" height="46" rx="6" fill="#d4202a"/>
+  <text class="label" x="125" y="249" text-anchor="middle">ポケット1</text>
+
+  <rect x="40" y="437" width="170" height="46" rx="6" fill="#d4202a"/>
+  <text class="label" x="125" y="469" text-anchor="middle">ポケット2</text>
+
+  <rect x="690" y="227" width="170" height="46" rx="6" fill="#d4202a"/>
+  <text class="label" x="775" y="259" text-anchor="middle">ストラップ</text>
+</svg>
